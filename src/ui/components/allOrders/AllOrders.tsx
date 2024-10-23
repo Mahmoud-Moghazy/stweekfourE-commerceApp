@@ -6,7 +6,7 @@ import { RootState } from "../../../store/store";
 import { jwtDecode, JwtPayload } from "jwt-decode"; // Import JwtPayload for typing
 import LoadingScreen from "../LoadingScreen";
 import NotFound from "../NotFound";
-import ItemCard from "./itemCard";
+import ItemCard from "./ItemCard";
 import { Product } from "../../../constants/interfaces";
 
 interface MyJwtPayload extends JwtPayload {

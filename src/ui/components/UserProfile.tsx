@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import UserForm from "./userProfile/userForm";
+import UserForm from "./userProfile/UserForm";
 
 const UserProfile: React.FC = () => {
   return (
