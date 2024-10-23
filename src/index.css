@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply mx-auto xl:max-w-[1170px] px-2 xl:px-0;
+  }
+  .links__menu {
+    @apply absolute end-2 lg:opacity-100 rounded-md bg-black bg-opacity-60 text-white flex flex-col lg:space-x-10 justify-evenly p-6 lg:static lg:flex-row lg:p-0 lg:bg-transparent lg:text-black;
+  }
+}
+
+/* Hide the number input arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Hide the number input arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield; /* Removes the spinner */
+}
+
+
+/* Hide scrollbar for modern browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.custom__shadow__two {
+  background-image: radial-gradient(
+    circle,
+    rgba(134, 134, 134, 0.884),
+    rgba(90, 90, 90, 0.568),
+    rgba(0, 0, 0, 0.795)
+  );
+}
+
+.custom__shadow {
+  /* Add vendor prefixes for wider browser support */
+  background: black -webkit-radial-gradient(circle, rgb(77, 76, 76), rgba(58, 57, 57, 0.404), rgba(0, 0, 0, 0.123));
+  background: black -moz-radial-gradient(circle, rgb(77, 76, 76), rgba(58, 57, 57, 0.404), rgba(0, 0, 0, 0.123));
+  background: black
+    radial-gradient(
+      circle,
+      rgb(77, 76, 76),
+      rgba(58, 57, 57, 0.404),
+      rgba(0, 0, 0, 0.123)
+    );
+
+  background-position: right;
+  background-size: 60%;
+  background-repeat: no-repeat;
+
+  /* Add a subtle box-shadow for additional depth */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
