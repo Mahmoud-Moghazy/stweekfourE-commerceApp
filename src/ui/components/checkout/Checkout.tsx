@@ -47,9 +47,8 @@ const Checkout: React.FC = () => {
         shippingAddress,
       }).unwrap();
       if (response.status === "success") {
-        window.open(response.session.url);
-        toast.success("Checkout session created successfully");
-        navigate("/allorders");
+        window.location.href = response.session.url;
+        toast.success("Redirecting to checkout...");
       }
     } catch (error) {
       console.error("Error during checkout:", error);
