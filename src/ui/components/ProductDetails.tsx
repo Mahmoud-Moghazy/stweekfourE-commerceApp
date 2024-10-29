@@ -42,7 +42,7 @@ const ProductDetails: React.FC = () => {
         </Link>
         <span>/</span>
         <Link
-          to={`/categoryDetails/${product?.category?._id}`}
+          to={`/category/${product?.category?._id}`}
           className="text-gray-500"
         >
           {product?.category?.name}
